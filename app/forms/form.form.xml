@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<form>
+<tframe id="1">
+<class>TFrame</class>
+<name>TFrame5</name>
+<x>582</x>
+<y>49</y>
+<title>Frame 5</title>
+<width>61</width>
+<height>264</height>
+<child>
+<tpanel>
+</tpanel>
+</child>
+</tframe>
+<tframe id="2">
+<class>TFrame</class>
+<name>TFrame1</name>
+<x>168</x>
+<y>45</y>
+<title>Frame 1</title>
+<width>264</width>
+<height>302</height>
+<child>
+<tpanel>
+<tlabel id="3">
+<class>TLabel</class>
+<name>TLabel2</name>
+<x>13</x>
+<y>11</y>
+<color>#ff0000</color>
+<size>10</size>
+<style>b,u</style>
+<value>TLabel2</value>
+
+</tlabel>
+<tentry id="4">
+<class>TEntry</class>
+<name>TEntry3</name>
+<x>71</x>
+<y>12</y>
+<maxlen>0</maxlen>
+<value></value>
+<mask></mask>
+<width>102</width>
+<editable>1</editable>
+<tip></tip>
+<required>0</required>
+
+</tentry>
+<tcolor id="5">
+<value></value>
+<class>TColor</class>
+<name>tcolor6</name>
+<mask></mask>
+<x>72</x>
+<y>61</y>
+<width>81</width>
+<editable>1</editable>
+<required>0</required>
+
+</tcolor>
+<tframe id="6">
+<class>TFrame</class>
+<name>TFrame4</name>
+<x>184</x>
+<y>4</y>
+<title>Frame 4</title>
+<width>61</width>
+<height>264</height>
+<child>
+<tpanel>
+</tpanel>
+</child>
+</tframe>
+</tpanel>
+</child>
+</tframe>
+</form>

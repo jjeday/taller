@@ -1,0 +1,46 @@
+<!--[main]-->
+<div class="tform">
+    <table style="width:640px">
+        <tr class="tformtitle">
+            <td colspan="2"> <label> Datos del cliente </label> </td>
+        </tr>
+        <tbody class="formdata">
+
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">ID</td>
+                <td style="padding-left:10px" align="left">{$idcliente}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Nombres</td>
+                <td style="padding-left:10px" align="left">{$nombres}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Celular</td>
+                <td style="padding-left:10px" align="left">{$celular}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Correo</td>
+                <td style="padding-left:10px" align="left">{$correo}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Visible</td>
+                <td style="padding-left:10px" align="left">{$visible}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Institución</td>
+                <td style="padding-left:10px" align="left">{$institucion_id}</td>
+            </tr>
+
+
+            <tr class="tformaction">
+                <td colspan="2" align="right">
+                    <a generator="adianti" href="index.php?class=FormCliente&method=onEdit&idcliente={$idcliente}&key={$idcliente}" class="btn btn-default">
+                        <span class="fa fa-pencil-square-o"></span>
+                        Edit
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!--[/main]-->

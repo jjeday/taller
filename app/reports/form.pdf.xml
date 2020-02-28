@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<design>
+	<page>
+		<format>a4</format>
+		<orientation>P</orientation>
+	</page>
+	<rectangle id="1">
+<class>Rectangle</class>
+<x>8</x>
+<y>8</y>
+<width>200</width>
+<height>100</height>
+<fillcolor>#d4ff00</fillcolor>
+<linecolor>#000000</linecolor>
+<linewidth>1</linewidth>
+<shadowcolor>#FFFFFF</shadowcolor>
+<shadowoffset>0</shadowoffset>
+</rectangle>
+<rectangle id="2">
+<class>Rectangle</class>
+<x>170</x>
+<y>8</y>
+<width>187</width>
+<height>100</height>
+<fillcolor>#ff0000</fillcolor>
+<linecolor>#002aff</linecolor>
+<linewidth>6.5</linewidth>
+<shadowcolor>#FFFFFF</shadowcolor>
+<shadowoffset>0</shadowoffset>
+</rectangle>
+<rectangle id="3">
+<class>Rectangle</class>
+<x>298</x>
+<y>8</y>
+<width>200</width>
+<height>100</height>
+<fillcolor>#ff97dc</fillcolor>
+<linecolor>#ff0000</linecolor>
+<linewidth>1</linewidth>
+<shadowcolor>#FFFFFF</shadowcolor>
+<shadowoffset>0</shadowoffset>
+</rectangle>
+</design>

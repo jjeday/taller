@@ -1,0 +1,54 @@
+<!--[main]-->
+<div class="tform">
+    <table style="width:640px">
+        <tr class="tformtitle">
+            <td colspan="2"> <label> Detalle clase </label> </td>
+        </tr>
+        <tbody class="formdata">
+
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Id</td>
+                <td style="padding-left:10px" align="left">{$id}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Start Time</td>
+                <td style="padding-left:10px" align="left">{$start_time}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">End Time</td>
+                <td style="padding-left:10px" align="left">{$end_time}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Color</td>
+                <td style="padding-left:10px" align="left">{$color}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Title</td>
+                <td style="padding-left:10px" align="left">{$title}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Profesor Id</td>
+                <td style="padding-left:10px" align="left">{$profesor_id}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Estado</td>
+                <td style="padding-left:10px" align="left">{$estado}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Description</td>
+                <td style="padding-left:10px" align="left">{$description}</td>
+            </tr>
+
+
+            <tr class="tformaction">
+                <td colspan="2" align="right">
+                    <a generator="adianti" href="index.php?class=FormGrupo&method=onEdit&id={$id}&key={$id}" class="btn btn-default">
+                        <span class="fa fa-pencil-square-o"></span>
+                        Edit
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!--[/main]-->

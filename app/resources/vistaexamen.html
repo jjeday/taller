@@ -1,0 +1,74 @@
+<!--[main]-->
+<div class="tform">
+    <table style="width:100%">
+        <tr class="tformtitle">
+            <td colspan="2"> <label> Exámen </label> </td>
+        </tr>
+        <tbody class="formdata">
+
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Idservicio</td>
+                <td style="padding-left:10px" align="left">{$idservicio}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Fecha Atencion</td>
+                <td style="padding-left:10px" align="left">{$fecha_atencion}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Hora Atencion</td>
+                <td style="padding-left:10px" align="left">{$hora_atencion}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Cliente</td>
+                <td style="padding-left:10px" align="left">{$cliente_nombres}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Profesor</td>
+                <td style="padding-left:10px" align="left">{$profesor_nombres}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Curso</td>
+                <td style="padding-left:10px" align="left">{$curso_denominacion}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Fecha</td>
+                <td style="padding-left:10px" align="left">{$fecha}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Hora</td>
+                <td style="padding-left:10px" align="left">{$hora}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Adelanto</td>
+                <td style="padding-left:10px" align="left">{$adelanto}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Deuda</td>
+                <td style="padding-left:10px" align="left">{$deuda}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Total</td>
+                <td style="padding-left:10px" align="left">{$total}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Estado</td>
+                <td style="padding-left:10px" align="left">{$estado}</td>
+            </tr>
+            <tr class="tformrow">
+                <td style="font-weight:bold"  align="right">Atencion</td>
+                <td style="padding-left:10px" align="left">{$atencion}</td>
+            </tr>
+
+
+            <tr class="tformaction">
+                <td colspan="2" align="right">
+                    <a generator="adianti" href="index.php?class=FormEditExamen&method=onEdit&idservicio={$idservicio}&key={$idservicio}" class="btn btn-default">
+                        <span class="fa fa-pencil-square-o"></span>
+                        Edit
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!--[/main]-->

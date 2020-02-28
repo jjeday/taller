@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<tframe id="1">
+		<class>TFrame</class>
+		<name>TFrame1</name>
+		<x>112</x>
+		<y>55</y>
+		<title>Frame 1</title>
+		<width>315</width>
+		<height>305</height>
+		<child>
+			<tpanel>
+				<tframe id="2">
+					<class>TFrame</class>
+					<name>TFrame2</name>
+					<x>47</x>
+					<y>54</y>
+					<title>Frame 2</title>
+					<width>235</width>
+					<height>203</height>
+					<child>
+						<tpanel>
+						</tpanel>
+					</child>
+				</tframe>
+			</tpanel>
+		</child>
+	</tframe>
+</form>

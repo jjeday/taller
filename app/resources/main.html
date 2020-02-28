@@ -1,0 +1,189 @@
+<!--[main]-->
+<div class="row">
+	<div class="col-lg-3 col-xs-6">
+		<!-- small box -->
+		<div class="small-box bg-aqua">
+			<div class="inner">
+				<h3>{$total_clases}</h3>
+
+				<p>Clases por realizarse</p>
+			</div>
+			<div class="icon">
+				<i class="ion ion-easel"></i>
+			</div>
+			<a href="index.php?class=ListClases" generator="adianti" class="small-box-footer"> Mas información<i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+	</div>
+	<!-- ./col -->
+
+
+	<div class="col-lg-3 col-xs-6">
+		<!-- small box -->
+		<div class="small-box bg-red">
+			<div class="inner">
+				<h3>{$total_tareas}</h3>
+
+				<p>Tareas por entregar</p>
+			</div>
+			<div class="icon">
+				<i class="ion ion-ios-compose-outline"></i>
+			</div>
+			<a href="index.php?class=ListTareas" generator="adianti" class="small-box-footer">Mas información <i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+	</div>
+	<!-- ./col -->
+
+
+
+	<div class="col-lg-3 col-xs-6">
+		<!-- small box -->
+		<div class="small-box bg-green">
+			<div class="inner">
+				<h3>{$total_examenes}<sup style="font-size: 20px"></sup></h3>
+
+				<p>Examenes pendientes</p>
+			</div>
+			<div class="icon">
+				<i class="ion ion-ios-paper"></i>
+			</div>
+			<a href="index.php?class=ListExamen" generator="adianti" class="small-box-footer">Mas información <i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+	</div>
+	<!-- ./col -->
+	<div class="col-lg-3 col-xs-6">
+		<!-- small box -->
+		<div class="small-box bg-yellow">
+			<div class="inner">
+				<h3>{$total_paquetes}<sup style="font-size: 20px"></sup></h3>
+
+				<p>Paquetes en curso</p>
+			</div>
+			<div class="icon">
+				<i class="ion ion-filing"></i>
+			</div>
+			<a href="index.php?class=ListPaquete" generator="adianti" class="small-box-footer">Mas información <i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+	</div>
+	<!-- ./col -->
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="box box-primary">
+			<div class="box-header with-border">
+				<h3 class="box-title">Clientes en la semana</h3>
+
+				<div class="box-tools pull-right">
+					<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+					</button>
+					<div class="btn-group">
+						<button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="dropdown">
+							<i class="fa fa-wrench"></i></button>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Alguna acción</a></li>
+							<li><a href="#">Otra action</a></li>
+							<li><a href="#">Alguna otra opción aquí</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Otra cosa por hacer</a></li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			<!-- /.box-header -->
+			<div class="box-body">
+				<div class="row">
+					<div class="col-md-12">
+						<p class="text-center">
+							<strong>Ingresos en el mes</strong>
+						</p>
+
+						<div class="chart">
+							<!--
+							<canvas id="salesChart" style="height: 180px; width: 645px;" height="180" width="645"></canvas> Sales Chart Canvas -->
+                            <div id="chart_div" style="width: {$width}; height: {$height};"></div>
+<script>
+$(function() {
+    var render_chart = function() {
+        google.charts.load('current', {'packages':['bar']});
+        google.charts.setOnLoadCallback(drawVisualization);
+        
+        function drawVisualization() {
+            var data = google.visualization.arrayToDataTable( {$data} );
+            var options = {
+              title : '{$title}',
+              vAxis: {title: '{$ytitle}'},
+              hAxis: {title: '{$xtitle}'},
+              seriesType: 'bars'
+            };
+            
+            var chart = new google.charts.Bar(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+    };
+  
+    if (typeof google == 'undefined') {
+        $.getScript("https://www.gstatic.com/charts/loader.js", render_chart);
+    }
+    else {
+        render_chart();
+    }
+});
+</script>
+
+						</div>
+						<!-- /.chart-responsive -->
+					</div>
+					<!-- /.col -->
+
+					<!-- /.col -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- ./box-body -->
+			<div class="box-footer">
+				<div class="row">
+					<div class="col-sm-3 col-xs-6">
+						<div class="description-block border-right">
+							<span class="description-percentage text-green"><i class="fa fa-caret-up"></i></span>
+							<h5 class="description-header">{$ingresos_hoy}</h5>
+							<span class="description-text">Ingresos hoy</span>
+						</div>
+						<!-- /.description-block -->
+					</div>
+					<!-- /.col -->
+					<div class="col-sm-3 col-xs-6">
+						<div class="description-block border-right">
+							<span class="description-percentage text-green"><i class="fa fa-caret-up"></i></span>
+							<h5 class="description-header">{$ingresos_semana}</h5>
+							<span class="description-text">Servicio en la semana</span>
+						</div>
+						<!-- /.description-block -->
+					</div>
+					<!-- /.col -->
+					<div class="col-sm-3 col-xs-6">
+						<div class="description-block border-right">
+							<span class="description-percentage text-green"><i class="fa fa-caret-up"></i></span>
+							<h5 class="description-header">{$ingresos_mes}</h5>
+							<span class="description-text">Ingresos en el mes</span>
+						</div>
+						<!-- /.description-block -->
+					</div>
+					<!-- /.col -->
+					<div class="col-sm-3 col-xs-6">
+						<div class="description-block">
+							<span class="description-percentage text-red"><i class="fa fa-caret-down"></i></span>
+							<h5 class="description-header">{$egresos_mes}</h5>
+							<span class="description-text">Egresos en el mes</span>
+						</div>
+						<!-- /.description-block -->
+					</div>
+				</div>
+				<!-- /.row -->
+			</div>
+		</div>
+		<!-- /.box -->
+	</div>
+	<!-- /.col -->
+</div>
+<!--[/main]-->

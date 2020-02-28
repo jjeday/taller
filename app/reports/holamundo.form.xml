@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<tframe id="1">
+		<class>TFrame</class>
+		<name>TFrame1</name>
+		<x>85</x>
+		<titulo>1</titulo>
+		<y>59</y>
+		<title>1</title>
+		<width>525</width>
+		<height>372</height>
+		<child>
+			<tframe id="2">
+				<class>TFrame</class>
+				<name>TFrame2</name>
+				<x>174</x>
+				<titulo>1</titulo>
+				<y>61</y>
+				<title>1</title>
+				<width>324</width>
+				<height>285</height>
+				<child>
+					<tlabel id="3">
+						<class>TLabel</class>
+						<name>TLabel5</name>
+						<x>22</x>
+						<y>19</y>
+						<color>#000000</color>
+						<size>10</size>
+						<bold>b</bold>
+						<italic>i</italic>
+						<underline>u</underline>
+						<value>TLabel5</value>
+
+					</tlabel>
+					<tframe id="4">
+						<class>TFrame</class>
+						<name>TFrame3</name>
+						<x>103</x>
+						<titulo>1</titulo>
+						<y>23</y>
+						<title>1</title>
+						<width>200</width>
+						<height>215</height>
+						<child>
+						</child>
+					</tframe>
+				</child>
+			</tframe>
+		</child>
+	</tframe>
+	<tlabel id="5">
+		<class>TLabel</class>
+		<name>TLabel4</name>
+		<x>28</x>
+		<y>10</y>
+		<color>#000000</color>
+		<size>10</size>
+		<bold></bold>
+		<italic></italic>
+		<underline></underline>
+		<value>TLabel4</value>
+
+	</tlabel>
+	<tlabel id="6">
+		<class>TLabel</class>
+		<name>TLabel6</name>
+		<x>30</x>
+		<y>33</y>
+		<color>#ff0000</color>
+		<size>10</size>
+		<bold></bold>
+		<italic></italic>
+		<underline></underline>
+		<value>TLabel6</value>
+
+	</tlabel>
+</form>

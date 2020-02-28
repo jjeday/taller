@@ -1,0 +1,90 @@
+<!--[main]-->
+<html>
+	<style>
+		.title
+		{
+			font-family: Arial;
+			color: #ffffff;
+			background-color: #EA9C98;
+			border-top: 1px solid #000000;
+			border-bottom: 1px solid #000000;
+			border-left: 1px solid #000000;
+			border-right: 1px solid #000000;
+			font-size: 10pt;
+			font-weight: bold;
+		}
+		.datap
+		{
+			font-family: Arial;
+			color: #000000;
+			background-color: #EEEEEE;
+			border-top: 1px solid #000000;
+			border-bottom: 1px solid #000000;
+			border-left: 1px solid #000000;
+			border-right: 1px solid #000000;
+			font-size: 10pt;
+		}
+		.datai
+		{
+			font-family: Arial;
+			color: #000000;
+			background-color: #ffffff;
+			border-top: 1px solid #000000;
+			border-bottom: 1px solid #000000;
+			border-left: 1px solid #000000;
+			border-right: 1px solid #000000;
+			font-size: 10pt;
+		}
+		.header
+		{
+			font-family: Arial;
+			color: #ffffff;
+			background-color: #904F49;
+			border-top: 1px solid #000000;
+			border-bottom: 1px solid #000000;
+			border-left: 1px solid #000000;
+			border-right: 1px solid #000000;
+			font-size: 16pt;
+		}
+		.footer
+		{
+			font-family: Times;
+			color: #000000;
+			background-color: #F2BEBC;
+			border-top: 1px solid #000000;
+			border-bottom: 1px solid #000000;
+			border-left: 1px solid #000000;
+			border-right: 1px solid #000000;
+			font-size: 10pt;
+			font-style: italic;
+		}
+	</style>
+	<table cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+		<thead>
+			<tr>
+				<th align="center" width="600" colspan="6" class="header">{$titulo}</th>
+			</tr>
+			<tr>
+				<th align="left" width="100" colspan="1" class="title">Facultad</th>
+<th align="left" width="100" colspan="1" class="title">Departamento</th>
+<th align="left" width="100" colspan="1" class="title">Semestre</th>
+<th align="left" width="100" colspan="1" class="title">Idusuario</th>
+<th align="left" width="100" colspan="1" class="title">Nombres</th>
+<th align="left" width="100" colspan="1" class="title">Totalrealizadas</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!--[items]-->
+			<tr>
+				<td align="left" width="100" colspan="1" class="{$class}">{$facultad}</td>
+<td align="left" width="100" colspan="1" class="{$class}">{$departamento}</td>
+<td align="left" width="100" colspan="1" class="{$class}">{$semestre}</td>
+<td align="left" width="100" colspan="1" class="{$class}">{$idusuario}</td>
+<td align="left" width="100" colspan="1" class="{$class}">{$nombres}</td>
+<td align="left" width="100" colspan="1" class="{$class}">{$totalrealizadas}</td>
+			</tr>
+			<!--[/items]-->
+		</tbody>
+	</table>
+</html>
+<!--[/main]-->
